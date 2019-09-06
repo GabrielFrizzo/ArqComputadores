@@ -1,0 +1,7 @@
+v 4
+file . "somador_tb.vhdl" "b583679edceed0b2f5b93fb7cce04f71ce7a2396" "20190906051228.060":
+  entity somador_tb at 1( 0) + 0 on 13;
+  architecture a_somador_tb of somador_tb at 7( 89) + 0 on 14;
+file . "somador.vhdl" "bfa2287d163dde2bf3f8753402d3d364aac72ec3" "20190906051058.401":
+  entity somador at 1( 0) + 0 on 11;
+  architecture a_somador of somador at 13( 238) + 0 on 12;
