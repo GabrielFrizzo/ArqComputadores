@@ -1,0 +1,7 @@
+v 4
+file . "soma_e_divide.vhdl" "e9166a89137e9ac2b7b5ac4daa233e1d508ba272" "20190912200057.459":
+  entity soma_e_divide at 1( 0) + 0 on 17;
+  architecture a_soma_e_divide of soma_e_divide at 11( 221) + 0 on 18;
+file . "soma_e_divide_tb.vhdl" "5f0fb4844f4a6de60f560ebd602571edae8dd1e9" "20190912200148.567":
+  entity soma_e_divide_tb at 1( 0) + 0 on 21;
+  architecture a_soma_e_divide_tb of soma_e_divide_tb at 8( 127) + 0 on 22;
