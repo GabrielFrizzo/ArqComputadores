@@ -1,0 +1,7 @@
+v 4
+file . "registrador_tb.vhdl" "9ff7fba88345c8b81a7a436fa9677c2da2c43c52" "20190919194453.168":
+  entity registrador_tb at 1( 0) + 0 on 13;
+  architecture a_registrador_tb of registrador_tb at 8( 123) + 0 on 14;
+file . "registrador.vhdl" "80af9a351fbaf6c9e16ad2c05136d71fece3ca29" "20190919194449.472":
+  entity registrador at 1( 0) + 0 on 11;
+  architecture a_registrador of registrador at 15( 311) + 0 on 12;
