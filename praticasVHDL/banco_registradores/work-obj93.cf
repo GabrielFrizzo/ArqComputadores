@@ -1,0 +1,13 @@
+v 4
+file . "banco_reg_tb.vhdl" "42717c908892d90764e0757726ecdc23e9888c23" "20190923020821.218":
+  entity banco_reg_tb at 1( 0) + 0 on 33;
+  architecture a_banco_reg_tb of banco_reg_tb at 8( 119) + 0 on 34;
+file . "registrador.vhdl" "80af9a351fbaf6c9e16ad2c05136d71fece3ca29" "20190922172316.982":
+  entity registrador at 1( 0) + 0 on 13;
+  architecture a_registrador of registrador at 15( 311) + 0 on 14;
+file . "mux3x1.vhdl" "ad4787b1a72452eb4f7b421e83c0cce34f6e5f22" "20190922172312.285":
+  entity mux3x1 at 1( 0) + 0 on 11;
+  architecture a_mux3x1 of mux3x1 at 19( 613) + 0 on 12;
+file . "banco_reg.vhdl" "d11ddd2ca45e54e73ed626efcf43cff19bbf5e06" "20190923015521.920":
+  entity banco_reg at 1( 0) + 0 on 25;
+  architecture a_banco_reg of banco_reg at 19( 539) + 0 on 26;

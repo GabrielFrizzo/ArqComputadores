@@ -27,4 +27,4 @@ begin
              entr6 when sel = "110" else
              entr7 when sel = "111" else
              "0000000000000000";
-end architecture a_mux2x1;
+end architecture a_mux3x1;
