@@ -12,9 +12,9 @@ helper function for VHDL analyzing in bash:
             ghdl -e "${var}_tb" && \
             echo "Testbench $var elaborado!"
         done
-        ghdl -r "${var}_tb" --stop-time=3000ns --wave="$1.ghw"
+        ghdl -r "${var}_tb" --stop-time=3000ns --wave="${var}.ghw"
         echo "Onda criada!. Abrindo..."
-        gtkwave "$1.ghw"
+        gtkwave "${var}.ghw"
     }
 
 You can use it like so:
