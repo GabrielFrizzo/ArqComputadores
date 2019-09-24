@@ -10,13 +10,13 @@ architecture ula_tb of ula_tb is
 		port(   entr0, entr1 : in unsigned(15 downto 0);          
 				sel_op : in unsigned(1 downto 0);
 				saida : out unsigned(15 downto 0);
-				equal : out unsigned(0 downto 0)
+				equal : out std_logic
 		);
 	end component;
 	signal entr0, entr1 : unsigned(15 downto 0);
 	signal saida : unsigned(15 downto 0);
 	signal sel_op : unsigned(1 downto 0);
-	signal equal : unsigned(0 downto 0);
+	signal equal : std_logic;
 	
 begin   
 	uut: ula port map(entr0=>entr0,entr1=>entr1,sel_op=>sel_op,saida=>saida,equal=>equal);
