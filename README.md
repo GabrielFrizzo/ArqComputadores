@@ -18,4 +18,5 @@ helper function for VHDL analyzing in bash:
     }
 
 You can use it like so:
+
     ghda mux2x1 mux3x1 registrador banco_reg ula reg_ula
