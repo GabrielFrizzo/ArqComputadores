@@ -1,2 +1,2 @@
-jmp: 100k kkkk kkxx xx
+jmp: 100x xxxk kkkk kk
 nop: 000x xxxx xxxx xx
