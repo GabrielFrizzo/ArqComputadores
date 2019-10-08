@@ -1,0 +1,23 @@
+registradores:
+    32 registradores de 8 bits de uso geral(R0-R31)
+    Algumas operações usam pares de registradores, com 18 bits
+    Existem três pares de registradores, chamados de X(R27:R26), Y(R29:R28) e Z(R31-R30) que são usados como registradores de ponteiros, para endereçamento de memória
+    Esses 3 permitem modos de endereçamento de pós-incremento e pré-decremento
+    Operações que usam valor imediato são limitadas aos registradores R16-R31, ou aos pares R25:R24-R31:R30
+    Esses registradores são endereçados pelos seus números(0-31), mas instruções limitadas a apenas alguns registradores não utilizam o número inteiro com 5bits
+
+carga de constante:
+    LDI (R16-R31), constante8-bit
+
+copia de valor:
+    MOV (R0-R31), (R0-R31)
+
+soma de dois valores:
+    ADD (R0-R31), (R0-R31)
+
+subtração de dois valores:
+    SUB (R0-R31), (R0-R31)
+    SUBI (R16-R31), constante8-bit
+
+desvio incondicional:
+    JMP constante22-bit
