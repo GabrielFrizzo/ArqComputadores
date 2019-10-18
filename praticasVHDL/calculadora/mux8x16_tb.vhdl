@@ -2,11 +2,11 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-entity mux3x1_tb is
-end entity mux3x1_tb;
+entity mux8x16_tb is
+end entity mux8x16_tb;
 
-architecture a_mux3x1_tb of mux3x1_tb is
-    component mux3x1 is
+architecture a_mux8x16_tb of mux8x16_tb is
+    component mux8x16 is
         port( sel         : in unsigned(2 downto 0);
               entr0       : in unsigned(15 downto 0);
               entr1       : in unsigned(15 downto 0);
@@ -18,11 +18,11 @@ architecture a_mux3x1_tb of mux3x1_tb is
               entr7       : in unsigned(15 downto 0);
               saida       : out unsigned(15 downto 0)
     );
-    end component mux3x1;
+    end component mux8x16;
     signal sel : unsigned(2 downto 0);
     signal entr0, entr1, entr2, entr3, entr4, entr5, entr6, entr7, saida : unsigned(15 downto 0);
 begin
-    uut: mux3x1 port map (
+    uut: mux8x16 port map (
             sel => sel,
             entr0 => entr0,
             entr1 => entr1,
@@ -87,5 +87,5 @@ begin
         wait for 50 ns;
         wait;
     end process;
-end architecture a_mux3x1_tb;
+end architecture a_mux8x16_tb;
 

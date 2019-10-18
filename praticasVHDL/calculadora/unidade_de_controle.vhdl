@@ -31,15 +31,14 @@ begin
 					     opcode = "0110" else
 			    '0';
 
-	ulasrca <= '1' when opcode = "0010" or opcode = "0110" else
-			   '0';
-
-	ulasrcb <= '0' when opcode(3 downto 1) = "001" else
+	ulasrca <= '0' when opcode = "0010" or opcode = "0110" else
 			   '1';
 
-	ula_op <= '1' when opcode = "0010" or
-					   opcode = "0100" or
-					   opcode = "0110" else
+	ulasrcb <= '1' when opcode(3 downto 1) = "001" else
+			   '0';
+
+	ula_op <= '1' when opcode = "0011" or
+					   opcode = "0101" else
 			  '0';
 
 	operror <= '0' when opcode = "0000" or

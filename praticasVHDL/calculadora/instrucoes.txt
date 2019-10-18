@@ -1,17 +1,11 @@
 	  3210 9876 5432 10
 nop : 0000 xxxx xxxx xx
-ldi : 0010 RRRi iiii ii TODO
-subi: 0011 RRRi iiii ii TODO
-add : 0100 RRRx xxxr rr TODO
-sub : 0101 RRRx xxxr rr TODO
-mov : 0110 RRRx xxxr rr TODO
+ldi : 0010 RRRi iiii ii
+subi: 0011 RRRi iiii ii
+add : 0100 RRRx xxxr rr
+sub : 0101 RRRx xxxr rr
+mov : 0110 RRRx xxxr rr
 jmp : 1000 xxxk kkkk kk
-
-
-
-
-
-
 breq: 1001 xxxk kkkk kk TODO
 brlt: 1010 xxxk kkkk kk TODO
 st  : 1100 RRRx xxxx xx TODO

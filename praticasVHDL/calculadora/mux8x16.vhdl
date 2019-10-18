@@ -2,7 +2,7 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-entity mux3x1 is
+entity mux8x16 is
     port( sel         : in unsigned(2 downto 0);
           entr0       : in unsigned(15 downto 0);
           entr1       : in unsigned(15 downto 0);
@@ -14,9 +14,9 @@ entity mux3x1 is
           entr7       : in unsigned(15 downto 0);
           saida       : out unsigned(15 downto 0)
     );
-end entity mux3x1;
+end entity mux8x16;
 
-architecture a_mux3x1 of mux3x1 is
+architecture a_mux8x16 of mux8x16 is
 begin
     saida <= entr0 when sel = "000" else
              entr1 when sel = "001" else
@@ -27,4 +27,4 @@ begin
              entr6 when sel = "110" else
              entr7 when sel = "111" else
              "0000000000000000";
-end architecture a_mux3x1;
+end architecture a_mux8x16;

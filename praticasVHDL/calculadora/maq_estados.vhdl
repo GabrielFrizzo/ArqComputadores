@@ -6,7 +6,7 @@ entity maq_estados is
     port ( 
         clk : in std_logic;
         rst : in std_logic;
-        estado : out unsigned(0 downto 1)
+        estado : out unsigned(1 downto 0)
     );
 end entity maq_estados;
 
@@ -18,7 +18,7 @@ begin
         if rst = '1' then
             registro <= "00";
         elsif rising_edge(clk) then
-            if registro="10" then
+            if registro="01" then
                 registro <= "00";
             else
                 registro <= registro+1;

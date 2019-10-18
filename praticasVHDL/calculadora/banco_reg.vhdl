@@ -17,7 +17,7 @@ entity banco_reg is
 end entity banco_reg;
 
 architecture a_banco_reg of banco_reg is
-    component mux3x1 is
+    component mux8x16 is
         port( sel         : in unsigned(2 downto 0);
               entr0       : in unsigned(15 downto 0);
               entr1       : in unsigned(15 downto 0);
@@ -29,7 +29,7 @@ architecture a_banco_reg of banco_reg is
               entr7       : in unsigned(15 downto 0);
               saida       : out unsigned(15 downto 0)
         );
-    end component mux3x1;
+    end component mux8x16;
 
     component registrador is
         port ( 
@@ -43,8 +43,8 @@ architecture a_banco_reg of banco_reg is
     signal reg0_out ,reg1_out ,reg2_out ,reg3_out ,reg4_out ,reg5_out ,reg6_out ,reg7_out : unsigned(15 downto 0);
     signal wr_en0 ,wr_en1 ,wr_en2 ,wr_en3 ,wr_en4 ,wr_en5 ,wr_en6 ,wr_en7 : std_logic;
 begin
-    mux_read1: mux3x1 port map(sel=>sel_reg_read1, entr0=>reg0_out, entr1=>reg1_out, entr2=>reg2_out, entr3=>reg3_out, entr4=>reg4_out, entr5=>reg5_out, entr6=>reg6_out, entr7=>reg7_out, saida=>saida1);
-    mux_read2: mux3x1 port map(sel=>sel_reg_read2, entr0=>reg0_out, entr1=>reg1_out, entr2=>reg2_out, entr3=>reg3_out, entr4=>reg4_out, entr5=>reg5_out, entr6=>reg6_out, entr7=>reg7_out, saida=>saida2);
+    mux_read1: mux8x16 port map(sel=>sel_reg_read1, entr0=>reg0_out, entr1=>reg1_out, entr2=>reg2_out, entr3=>reg3_out, entr4=>reg4_out, entr5=>reg5_out, entr6=>reg6_out, entr7=>reg7_out, saida=>saida1);
+    mux_read2: mux8x16 port map(sel=>sel_reg_read2, entr0=>reg0_out, entr1=>reg1_out, entr2=>reg2_out, entr3=>reg3_out, entr4=>reg4_out, entr5=>reg5_out, entr6=>reg6_out, entr7=>reg7_out, saida=>saida2);
     reg0: registrador port map(clk=>clk, rst=>rst, wr_en=>wr_en0, data_in=>write_in, data_out=>reg0_out);
     reg1: registrador port map(clk=>clk, rst=>rst, wr_en=>wr_en1, data_in=>write_in, data_out=>reg1_out);
     reg2: registrador port map(clk=>clk, rst=>rst, wr_en=>wr_en2, data_in=>write_in, data_out=>reg2_out);
