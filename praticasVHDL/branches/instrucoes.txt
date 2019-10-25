@@ -1,0 +1,14 @@
+	  3210 9876 5432 10
+nop : 0000 xxxx xxxx xx
+ldi : 0010 RRRi iiii ii
+subi: 0011 RRRi iiii ii
+add : 0100 RRRx xxxr rr
+sub : 0101 RRRx xxxr rr
+mov : 0110 RRRx xxxr rr
+jmp : 1000 xxxk kkkk kk
+breq: 1001 xxxk kkkk kk
+brlt: 1010 xxxk kkkk kk
+cp  : 1100 RRRx xxxr rr TODO
+cpi : 1101 RRRk kkkk kk TODO
+st  : 1110 RRRx xxxx xx TODO
+ld  : 1111 RRRx xxxx xx TODO

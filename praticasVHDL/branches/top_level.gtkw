@@ -1,0 +1,89 @@
+[*]
+[*] GTKWave Analyzer v3.3.86 (w)1999-2017 BSI
+[*] Fri Oct 25 03:04:52 2019
+[*]
+[dumpfile] "/home/frizzo/Documents/UTFPR/ArqSistemas/praticasVHDL/branches/top_level.ghw"
+[dumpfile_mtime] "Fri Oct 25 02:55:54 2019"
+[dumpfile_size] 15959
+[savefile] "/home/frizzo/Documents/UTFPR/ArqSistemas/praticasVHDL/branches/top_level.gtkw"
+[timestart] 0
+[size] 1307 713
+[pos] -1 -1
+*-28.366283 2708000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] top.
+[treeopen] top.top_level_tb.
+[treeopen] top.top_level_tb.uut.
+[treeopen] top.top_level_tb.uut.banco_reg_inst.reg1.
+[treeopen] top.top_level_tb.uut.ula_inst.
+[sst_width] 223
+[signals_width] 198
+[sst_expanded] 1
+[sst_vpaned_height] 386
+@28
+top.top_level_tb.err_sig
+top.top_level_tb.clk
+top.top_level_tb.rst
+@420
+#{top.top_level_tb.saida_ula[15:0]} top.top_level_tb.saida_ula[15] top.top_level_tb.saida_ula[14] top.top_level_tb.saida_ula[13] top.top_level_tb.saida_ula[12] top.top_level_tb.saida_ula[11] top.top_level_tb.saida_ula[10] top.top_level_tb.saida_ula[9] top.top_level_tb.saida_ula[8] top.top_level_tb.saida_ula[7] top.top_level_tb.saida_ula[6] top.top_level_tb.saida_ula[5] top.top_level_tb.saida_ula[4] top.top_level_tb.saida_ula[3] top.top_level_tb.saida_ula[2] top.top_level_tb.saida_ula[1] top.top_level_tb.saida_ula[0]
+#{top.top_level_tb.saida_reg_2[15:0]} top.top_level_tb.saida_reg_2[15] top.top_level_tb.saida_reg_2[14] top.top_level_tb.saida_reg_2[13] top.top_level_tb.saida_reg_2[12] top.top_level_tb.saida_reg_2[11] top.top_level_tb.saida_reg_2[10] top.top_level_tb.saida_reg_2[9] top.top_level_tb.saida_reg_2[8] top.top_level_tb.saida_reg_2[7] top.top_level_tb.saida_reg_2[6] top.top_level_tb.saida_reg_2[5] top.top_level_tb.saida_reg_2[4] top.top_level_tb.saida_reg_2[3] top.top_level_tb.saida_reg_2[2] top.top_level_tb.saida_reg_2[1] top.top_level_tb.saida_reg_2[0]
+#{top.top_level_tb.saida_reg_1[15:0]} top.top_level_tb.saida_reg_1[15] top.top_level_tb.saida_reg_1[14] top.top_level_tb.saida_reg_1[13] top.top_level_tb.saida_reg_1[12] top.top_level_tb.saida_reg_1[11] top.top_level_tb.saida_reg_1[10] top.top_level_tb.saida_reg_1[9] top.top_level_tb.saida_reg_1[8] top.top_level_tb.saida_reg_1[7] top.top_level_tb.saida_reg_1[6] top.top_level_tb.saida_reg_1[5] top.top_level_tb.saida_reg_1[4] top.top_level_tb.saida_reg_1[3] top.top_level_tb.saida_reg_1[2] top.top_level_tb.saida_reg_1[1] top.top_level_tb.saida_reg_1[0]
+@24
+#{top.top_level_tb.saida_pc[6:0]} top.top_level_tb.saida_pc[6] top.top_level_tb.saida_pc[5] top.top_level_tb.saida_pc[4] top.top_level_tb.saida_pc[3] top.top_level_tb.saida_pc[2] top.top_level_tb.saida_pc[1] top.top_level_tb.saida_pc[0]
+@28
+#{top.top_level_tb.saida_rom[13:0]} top.top_level_tb.saida_rom[13] top.top_level_tb.saida_rom[12] top.top_level_tb.saida_rom[11] top.top_level_tb.saida_rom[10] top.top_level_tb.saida_rom[9] top.top_level_tb.saida_rom[8] top.top_level_tb.saida_rom[7] top.top_level_tb.saida_rom[6] top.top_level_tb.saida_rom[5] top.top_level_tb.saida_rom[4] top.top_level_tb.saida_rom[3] top.top_level_tb.saida_rom[2] top.top_level_tb.saida_rom[1] top.top_level_tb.saida_rom[0]
+@c00420
++{r3} #{top.top_level_tb.uut.banco_reg_inst.reg3.registro[15:0]} top.top_level_tb.uut.banco_reg_inst.reg3.registro[15] top.top_level_tb.uut.banco_reg_inst.reg3.registro[14] top.top_level_tb.uut.banco_reg_inst.reg3.registro[13] top.top_level_tb.uut.banco_reg_inst.reg3.registro[12] top.top_level_tb.uut.banco_reg_inst.reg3.registro[11] top.top_level_tb.uut.banco_reg_inst.reg3.registro[10] top.top_level_tb.uut.banco_reg_inst.reg3.registro[9] top.top_level_tb.uut.banco_reg_inst.reg3.registro[8] top.top_level_tb.uut.banco_reg_inst.reg3.registro[7] top.top_level_tb.uut.banco_reg_inst.reg3.registro[6] top.top_level_tb.uut.banco_reg_inst.reg3.registro[5] top.top_level_tb.uut.banco_reg_inst.reg3.registro[4] top.top_level_tb.uut.banco_reg_inst.reg3.registro[3] top.top_level_tb.uut.banco_reg_inst.reg3.registro[2] top.top_level_tb.uut.banco_reg_inst.reg3.registro[1] top.top_level_tb.uut.banco_reg_inst.reg3.registro[0]
+@28
+top.top_level_tb.uut.banco_reg_inst.reg3.registro[15]
+top.top_level_tb.uut.banco_reg_inst.reg3.registro[14]
+top.top_level_tb.uut.banco_reg_inst.reg3.registro[13]
+top.top_level_tb.uut.banco_reg_inst.reg3.registro[12]
+top.top_level_tb.uut.banco_reg_inst.reg3.registro[11]
+top.top_level_tb.uut.banco_reg_inst.reg3.registro[10]
+top.top_level_tb.uut.banco_reg_inst.reg3.registro[9]
+top.top_level_tb.uut.banco_reg_inst.reg3.registro[8]
+top.top_level_tb.uut.banco_reg_inst.reg3.registro[7]
+top.top_level_tb.uut.banco_reg_inst.reg3.registro[6]
+top.top_level_tb.uut.banco_reg_inst.reg3.registro[5]
+top.top_level_tb.uut.banco_reg_inst.reg3.registro[4]
+top.top_level_tb.uut.banco_reg_inst.reg3.registro[3]
+top.top_level_tb.uut.banco_reg_inst.reg3.registro[2]
+top.top_level_tb.uut.banco_reg_inst.reg3.registro[1]
+top.top_level_tb.uut.banco_reg_inst.reg3.registro[0]
+@1401200
+-group_end
+@420
++{r4} #{top.top_level_tb.uut.banco_reg_inst.reg4.registro[15:0]} top.top_level_tb.uut.banco_reg_inst.reg4.registro[15] top.top_level_tb.uut.banco_reg_inst.reg4.registro[14] top.top_level_tb.uut.banco_reg_inst.reg4.registro[13] top.top_level_tb.uut.banco_reg_inst.reg4.registro[12] top.top_level_tb.uut.banco_reg_inst.reg4.registro[11] top.top_level_tb.uut.banco_reg_inst.reg4.registro[10] top.top_level_tb.uut.banco_reg_inst.reg4.registro[9] top.top_level_tb.uut.banco_reg_inst.reg4.registro[8] top.top_level_tb.uut.banco_reg_inst.reg4.registro[7] top.top_level_tb.uut.banco_reg_inst.reg4.registro[6] top.top_level_tb.uut.banco_reg_inst.reg4.registro[5] top.top_level_tb.uut.banco_reg_inst.reg4.registro[4] top.top_level_tb.uut.banco_reg_inst.reg4.registro[3] top.top_level_tb.uut.banco_reg_inst.reg4.registro[2] top.top_level_tb.uut.banco_reg_inst.reg4.registro[1] top.top_level_tb.uut.banco_reg_inst.reg4.registro[0]
+@c00420
++{r5} #{top.top_level_tb.uut.banco_reg_inst.reg5.registro[15:0]} top.top_level_tb.uut.banco_reg_inst.reg5.registro[15] top.top_level_tb.uut.banco_reg_inst.reg5.registro[14] top.top_level_tb.uut.banco_reg_inst.reg5.registro[13] top.top_level_tb.uut.banco_reg_inst.reg5.registro[12] top.top_level_tb.uut.banco_reg_inst.reg5.registro[11] top.top_level_tb.uut.banco_reg_inst.reg5.registro[10] top.top_level_tb.uut.banco_reg_inst.reg5.registro[9] top.top_level_tb.uut.banco_reg_inst.reg5.registro[8] top.top_level_tb.uut.banco_reg_inst.reg5.registro[7] top.top_level_tb.uut.banco_reg_inst.reg5.registro[6] top.top_level_tb.uut.banco_reg_inst.reg5.registro[5] top.top_level_tb.uut.banco_reg_inst.reg5.registro[4] top.top_level_tb.uut.banco_reg_inst.reg5.registro[3] top.top_level_tb.uut.banco_reg_inst.reg5.registro[2] top.top_level_tb.uut.banco_reg_inst.reg5.registro[1] top.top_level_tb.uut.banco_reg_inst.reg5.registro[0]
+@28
+top.top_level_tb.uut.banco_reg_inst.reg5.registro[15]
+top.top_level_tb.uut.banco_reg_inst.reg5.registro[14]
+top.top_level_tb.uut.banco_reg_inst.reg5.registro[13]
+top.top_level_tb.uut.banco_reg_inst.reg5.registro[12]
+top.top_level_tb.uut.banco_reg_inst.reg5.registro[11]
+top.top_level_tb.uut.banco_reg_inst.reg5.registro[10]
+top.top_level_tb.uut.banco_reg_inst.reg5.registro[9]
+top.top_level_tb.uut.banco_reg_inst.reg5.registro[8]
+top.top_level_tb.uut.banco_reg_inst.reg5.registro[7]
+top.top_level_tb.uut.banco_reg_inst.reg5.registro[6]
+top.top_level_tb.uut.banco_reg_inst.reg5.registro[5]
+top.top_level_tb.uut.banco_reg_inst.reg5.registro[4]
+top.top_level_tb.uut.banco_reg_inst.reg5.registro[3]
+top.top_level_tb.uut.banco_reg_inst.reg5.registro[2]
+top.top_level_tb.uut.banco_reg_inst.reg5.registro[1]
+top.top_level_tb.uut.banco_reg_inst.reg5.registro[0]
+@1401200
+-group_end
+@28
+#{top.top_level_tb.uut.mux_prox_end.sel[1:0]} top.top_level_tb.uut.mux_prox_end.sel[1] top.top_level_tb.uut.mux_prox_end.sel[0]
+top.top_level_tb.uut.flags_inst.sign
+top.top_level_tb.uut.flags_inst.zero
++{ula_sign} top.top_level_tb.uut.ula_inst.sign
++{ula_zero} top.top_level_tb.uut.ula_inst.zero
+@421
+#{top.top_level_tb.uut.ula_inst.entr0[15:0]} top.top_level_tb.uut.ula_inst.entr0[15] top.top_level_tb.uut.ula_inst.entr0[14] top.top_level_tb.uut.ula_inst.entr0[13] top.top_level_tb.uut.ula_inst.entr0[12] top.top_level_tb.uut.ula_inst.entr0[11] top.top_level_tb.uut.ula_inst.entr0[10] top.top_level_tb.uut.ula_inst.entr0[9] top.top_level_tb.uut.ula_inst.entr0[8] top.top_level_tb.uut.ula_inst.entr0[7] top.top_level_tb.uut.ula_inst.entr0[6] top.top_level_tb.uut.ula_inst.entr0[5] top.top_level_tb.uut.ula_inst.entr0[4] top.top_level_tb.uut.ula_inst.entr0[3] top.top_level_tb.uut.ula_inst.entr0[2] top.top_level_tb.uut.ula_inst.entr0[1] top.top_level_tb.uut.ula_inst.entr0[0]
+@420
+#{top.top_level_tb.uut.ula_inst.entr1[15:0]} top.top_level_tb.uut.ula_inst.entr1[15] top.top_level_tb.uut.ula_inst.entr1[14] top.top_level_tb.uut.ula_inst.entr1[13] top.top_level_tb.uut.ula_inst.entr1[12] top.top_level_tb.uut.ula_inst.entr1[11] top.top_level_tb.uut.ula_inst.entr1[10] top.top_level_tb.uut.ula_inst.entr1[9] top.top_level_tb.uut.ula_inst.entr1[8] top.top_level_tb.uut.ula_inst.entr1[7] top.top_level_tb.uut.ula_inst.entr1[6] top.top_level_tb.uut.ula_inst.entr1[5] top.top_level_tb.uut.ula_inst.entr1[4] top.top_level_tb.uut.ula_inst.entr1[3] top.top_level_tb.uut.ula_inst.entr1[2] top.top_level_tb.uut.ula_inst.entr1[1] top.top_level_tb.uut.ula_inst.entr1[0]
+[pattern_trace] 1
+[pattern_trace] 0
