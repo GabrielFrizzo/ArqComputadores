@@ -1,4 +1,3 @@
-	  3210 9876 5432 10
 nop : 0000 xxxx xxxx xx
 ldi : 0010 RRRi iiii ii
 subi: 0011 RRRi iiii ii

@@ -1,34 +1,44 @@
 from sys import argv
 
+opcodes = {
+	'nop' : '0000',
+	'ldi' : '0010',
+	'subi': '0011',
+	'add' : '0100',
+	'sub' : '0101',
+	'mov' : '0110',
+	'jmp' : '1000',
+	'breq': '1001',
+	'brlt': '1010',
+	'cp'  : '1100',
+	'cpi' : '1101',
+	'st'  : '1110',
+	'ld'  : '1111',
+}
+
 def bindigits(n, bits):
-    s = bin(n & int("1"*bits, 2))[2:]
+    s = bin(int(n) & int("1"*bits, 2))[2:]
     return ("{0:0>%s}" % (bits)).format(s)
 
 def decode(instr, rest):
+	op = opcodes[instr]
+
 	if instr == 'nop':
-		return "00000000000000"
-	elif instr == 'ldi':
-		return f"0010{bindigits(rest[0],3)}{bindigits(rest[1],7)}"
-	elif instr == 'subi':
-		return f"0011{bindigits(rest[0],3)}{bindigits(rest[1],7)}"
-	elif instr == 'add':
-		return f"0100{bindigits(rest[0],3)}0000{bindigits(rest[1],3)}"
-	elif instr == 'sub':
-		return f"0101{bindigits(rest[0],3)}0000{bindigits(rest[1],3)}"
-	elif instr == 'mov':
-		return f"0110{bindigits(rest[0],3)}0000{bindigits(rest[1],3)}"
-	elif instr == 'jmp':
-		return f"1000000{bindigits(rest[0],7)}"
-	elif instr == 'breq':
-		return f"1001000{bindigits(rest[0],7)}"
-	elif instr == 'brlt':
-		return f"1010000{bindigits(rest[0],7)}"
-	elif instr == 'cp':
-		return f"1100{bindigits(rest[0],3)}0000{bindigits(rest[1],3)}"
-	elif instr == 'cpi':
-		return f"1101{bindigits(rest[0],3)}{bindigits(rest[1],7)}"
-	elif instr == 'st':
-		return f"1110{bindigits(rest[0],3)}0000000"
+		return '00000000000000'
+	elif instr in ('ldi', 'subi', 'cpi'):
+		R = bindigits(rest[0][2:],3)
+		cte = bindigits(rest[1],7)
+		return op+R+cte
+	elif instr in ('add', 'sub', 'mov', 'cp'):
+		R = bindigits(rest[0][2:],3)
+		r = bindigits(rest[1][2:],3)
+		return op+R+'0'*4+r
+	elif instr in ('jmp', 'breq', 'brlt'):
+		cte = bindigits(rest[0],7)
+		return op+'0'*3+cte
+	elif instr in ('st', 'ld'):
+		R = bindigits(rest[0][2:],3)
+		return op+R+'0'*7
 	elif instr == 'ld':
 		return f"1111{bindigits(rest[0],3)}0000000"
 
@@ -37,6 +47,5 @@ with open(argv[1], 'r') as inp, \
 	for line in inp.readlines():
 		parts = line.split()
 		instr = parts[0]
-		rest = [int(x) for x in parts[1:]]
 
-		output.write(decode(instr, rest) + '\n')
+		output.write(decode(instr, parts[1:]) + '\n')
