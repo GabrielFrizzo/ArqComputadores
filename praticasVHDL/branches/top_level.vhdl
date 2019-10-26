@@ -153,6 +153,8 @@ architecture a_top_level of top_level is
         );
     end component maq_estados;
     signal estado : unsigned(1 downto 0);
+
+    signal branch_end : unsigned(6 downto 0);
 begin
     err_sig <= operror;
     saida_rom <= instruction;
@@ -205,10 +207,11 @@ begin
                              zero => ula_zero,
                              sign => ula_sign);
 
+    branch_end <= ula_out(6 downto 0) + 1;
     mux_prox_end : mux3x7 port map (sel => jump,
                                     entr0 => data_out_s,
                                     entr1 => instruction(6 downto 0),
-                                    entr2 => ula_out(6 downto 0),
+                                    entr2 => branch_end,
                                     saida => prox_end);
 
     data_out_pc_16 <= "000000000" & data_out_p;

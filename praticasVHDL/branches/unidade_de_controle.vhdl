@@ -53,18 +53,23 @@ begin
 
 	ulasrcb <= '1' when opcode(3 downto 1) = "001" or
 						opcode = "1001" or
-						opcode = "1010" else
+						opcode = "1010" or
+						opcode = "1101" else
 			   '0';
 
 	ula_op <= '1' when opcode = "0011" or
-					   opcode = "0101" else
+					   opcode = "0101" or
+					   opcode = "1100" or
+					   opcode = "1101" else
 			  '0';
 
 	pc_en  <= '1' when fetch = '1' and opcode_error = '0' else
 			  '0';
 
 	flags_en <= '1' when opcode = "0011" or
-						 opcode = "0101" else
+						 opcode = "0101" or
+						 opcode = "1100" or
+						 opcode = "1101" else
 				'0';
 
 	opcode_error <= '0' when opcode = "0000" or
@@ -75,6 +80,8 @@ begin
 							 opcode = "0110" or
 							 opcode = "1000" or
 							 opcode = "1001" or
-							 opcode = "1010" else
+							 opcode = "1010" or
+							 opcode = "1100" or
+							 opcode = "1101" else
 			   		'1';
 end architecture a_unidade_de_controle;

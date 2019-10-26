@@ -15,10 +15,10 @@ architecture a_rom of rom is
         -- caso endereco => conteudo
         0  => "00100110000000", -- carrega R3 com 0
         1  => "00101000000000", -- carrega R4 com 0
-        2  => "01101000000011", -- soma R3 com R4 e guarda em R4
+        2  => "01001000000011", -- soma R3 com R4 e guarda em R4
         3  => "00110111111111", -- soma 1 em R3
-        4  => "00110110011100", -- se R3<30 salta para a instrução do passo 3
-        5  => "10100001111101", 
+        4  => "11010110011110", -- se R3<30 salta para a instrução do passo 3
+        5  => "10100001111100", 
         6  => "01101010000100", -- copia valor de R4 para R5
         7  => "11111111111111",
         8  => "11111111111111",
@@ -28,14 +28,6 @@ architecture a_rom of rom is
         12 => "11111111111111",
         13 => "11111111111111",
         14 => "11111111111111",
-        15 => "11111111111111",
-        16 => "11111111111111",
-        17 => "11111111111111",
-        18 => "11111111111111",
-        19 => "11111111111111",
-        20 => "01100110000101", -- copia R5 para R3
-        21 => "10000000000010", -- salta para a terceira instrução desta lista
-        22 => "11111111111111",
         -- abaixo: casos omissos => (zero em todos os bits)
         others => (others=>'0')
     );
