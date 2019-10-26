@@ -16,7 +16,7 @@ architecture a_rom of rom is
         0  => "00100110000000", -- carrega R3 com 0
         1  => "00101000000000", -- carrega R4 com 0
         2  => "01101000000011", -- soma R3 com R4 e guarda em R4
-        3  => "00110111000011", -- soma 1 em R3
+        3  => "00110111111111", -- soma 1 em R3
         4  => "00110110011100", -- se R3<30 salta para a instrução do passo 3
         5  => "10100001111101", 
         6  => "01101010000100", -- copia valor de R4 para R5

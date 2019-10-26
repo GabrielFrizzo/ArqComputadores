@@ -9,6 +9,6 @@ jmp : 1000 xxxk kkkk kk
 breq: 1001 xxxk kkkk kk
 brlt: 1010 xxxk kkkk kk
 cp  : 1100 RRRx xxxr rr TODO
-cpi : 1101 RRRk kkkk kk TODO
+cpi : 1101 RRRi iiii ii TODO
 st  : 1110 RRRx xxxx xx TODO
 ld  : 1111 RRRx xxxx xx TODO
